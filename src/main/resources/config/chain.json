@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "handler_list": [
+    {
+      "id": "1",
+      "name": "参数解析",
+      "class_name": "com.bj58.lego.onlinedebug.handler.impl.ParamHandler"
+    },
+    {
+      "id": "2",
+      "name": "帖子是否展示处理",
+      "class_name": "com.bj58.lego.onlinedebug.handler.impl.JZShowHandler"
+    },
+    {
+      "id": "3",
+      "name": "账户状态验证",
+      "class_name": "com.bj58.lego.onlinedebug.handler.impl.UserAccountHandler"
+    },
+    {
+      "id": "4",
+      "name": "帖子预算信息验证",
+      "class_name": "com.bj58.lego.onlinedebug.handler.impl.BudgetHandler"
+    },
+    {
+      "id": "5",
+      "name": "帖子推广时间验证",
+      "class_name": "com.bj58.lego.onlinedebug.handler.impl.PromotionHandler"
+    }
+  ],
+  "chain_list": [
+    {
+      "chain_key": "jz_show",
+      "chain": "1,2,3,4,5"
+    }
+  ]
+}
